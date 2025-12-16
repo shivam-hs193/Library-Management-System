@@ -38,8 +38,10 @@ CREATE TABLE Transactions (
     due_date DATE,
     return_date DATE,
     fine DECIMAL(10,2) DEFAULT 0,
-    FOREIGN KEY (book_id) REFERENCES Books(book_id),
+    FOREIGN KEY (book_id) REFERENCES Books(book_id)
+        ON DELETE RESTRICT,
     FOREIGN KEY (member_id) REFERENCES Members(member_id)
+        ON DELETE RESTRICT
 );
 
 -- 3️⃣ Insert Sample Data
@@ -107,3 +109,7 @@ FROM Transactions t
 JOIN Members m ON t.member_id = m.member_id
 GROUP BY m.name
 ORDER BY books_borrowed DESC;
+
+CREATE INDEX idx_book_id ON Transactions(book_id);
+CREATE INDEX idx_member_id ON Transactions(member_id);
+
