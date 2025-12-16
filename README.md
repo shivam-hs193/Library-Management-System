@@ -26,7 +26,7 @@ MySQL Database
 ---
 
 ## 📁 Project Structure
-'''text
+'''
 Library-Management-System/
 │
 ├── backend/
@@ -42,7 +42,7 @@ Library-Management-System/
 │   ├── mysql-connector.py      # CLI version (reference / optional)
 │ 
 └── README.md
-
+'''
 
 ---
 
