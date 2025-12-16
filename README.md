@@ -1,22 +1,53 @@
-# 📚 Library Management System (Python + MySQL)
+# 📚 Library Management System (Flask + MySQL)
 
-A simple **Library Management System** using **Python** and **MySQL**.  
-It supports adding books/members, issuing and returning books, and tracking overdue fines.
+A **full-stack Library Management System** built using **Python (Flask)**, **MySQL**, and **HTML/CSS/JavaScript**.  
+The entire application runs from a **single command** and is accessed through a web browser.
 
 ---
 
 ## 🚀 Features
 - Add new books and members  
-- Issue & return books (with due date & fine calculation)  
-- View available and overdue books  
+- Issue and return books  
+- Automatic due date & fine calculation  
+- View available books  
+- View overdue books  
+- Database integrity using foreign keys  
+- Optimized queries using indexes  
+
+---
+
+## 🏗️ System Architecture
+Browser (HTML / CSS / JavaScript)
+↓
+Flask Backend (APIs + Template Rendering)
+↓
+MySQL Database
+
+---
+
+## 📁 Project Structure
+Library-Management-System/
+│
+├── backend/
+│ ├── app.py # Flask backend (main entry point)
+│ ├── library_management.sql # Database schema + sample data
+│ ├── templates/
+│ │ └── index.html # Frontend UI
+│ └── static/
+│ ├── style.css # Stylesheet
+│ └── script.js # Frontend logic
+│
+│ ├── mysql-connector.py # CLI version (reference / optional)
+|
+└── README.md
 
 ---
 
 ## 🛠️ Requirements
-- Python 3.x  
-- MySQL Server  
-- `mysql-connector-python`  
+- **Python** 3.10 or higher  
+- **MySQL Server** 8.0 or higher  
+- **MySQL Workbench** (recommended)
 
-Install dependency:
+### Python Dependencies
 ```bash
-pip install mysql-connector-python
+pip install flask mysql-connector-python
