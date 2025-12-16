@@ -26,7 +26,8 @@ MySQL Database
 ---
 
 ## 📁 Project Structure
-<<<<<<< HEAD
+
+=======
 ```text
 Library-Management-System/
 ├── backend/
@@ -40,32 +41,7 @@ Library-Management-System/
 │       └── script.js           # Frontend logic
 └── README.md
 ```
-=======
-Library-Management-System/
-├── backend/
-│   ├── app.py
-│   │   └── Flask backend (main entry point)
-│   │
-│   ├── mysql-connector.py
-│   │   └── CLI version (reference / optional)
-│   │
-│   ├── library_management.sql
-│   │   └── Database schema + sample data
-│   │
-│   ├── templates/
-│   │   └── index.html
-│   │       └── Frontend UI
-│   │
-│   └── static/
-│       ├── style.css
-│       │   └── Stylesheet
-│       └── script.js
-│           └── Frontend logic
-│
-└── README.md
 
-
->>>>>>> 43411f653252eea1c4dba10d115abbab407edd16
 ---
 
 ## 🛠️ Requirements
