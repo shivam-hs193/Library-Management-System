@@ -29,17 +29,19 @@ MySQL Database
 Library-Management-System/
 │
 ├── backend/
-│ ├── app.py # Flask backend (main entry point)
-│ ├── library_management.sql # Database schema + sample data
-│ ├── templates/
-│ │ └── index.html # Frontend UI
-│ └── static/
-│ ├── style.css # Stylesheet
-│ └── script.js # Frontend logic
-│
-│ ├── mysql-connector.py # CLI version (reference / optional)
-|
+│   ├── app.py                  # Flask backend (main entry point)
+│   ├── library_management.sql  # Database schema + sample data
+│   │
+│   ├── templates/
+│   │   └── index.html          # Frontend UI
+│   │
+│   └── static/
+│       ├── style.css           # Stylesheet
+│       └── script.js           # Frontend logic
+│   ├── mysql-connector.py      # CLI version (reference / optional)
+│ 
 └── README.md
+
 
 ---
 
